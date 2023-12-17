@@ -1,7 +1,5 @@
 class School {
     // implement 'add area', 'remove area', 'add lecturer', and 'remove lecturer' methods
-
-
     _areas: string[]  = [];
     _lecturers: (string | number)[] = ['Oleg', 'Sokil', 'JN', 'IT-step', '5 years', 'TypeScript', 38023321]; // Name, surname, position, company, experience, courses, contacts
 
@@ -173,7 +171,6 @@ class Student {
     getPerformanceRating() {
 
         if (!this._grades.length) return 0;
-
         const averageGrade: number = this._grades.reduce((sum, grade) => sum + grade, 0) / this._grades.length;
         const attendancePercentage: number = (this._visits.filter(present => present).length / this._visits.length) * 100;
 
